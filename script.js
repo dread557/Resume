@@ -1,4 +1,7 @@
-
+AOS.init({
+    offset: 200,
+    duration: 900
+});
 
 const timeline = gsap.timeline({ defaults: { duration: .7 } })
 timeline
@@ -7,4 +10,4 @@ timeline
     .from(".connect", { opacity: 0, stagger: .3 })
     .from(".education", { x: '-100vw' })
     .from(".interest", { x: '100vw' })
-    .from(".company", { y: '100vw' })
+    .from(".company", { opacity: 0, y: '100vw' })
